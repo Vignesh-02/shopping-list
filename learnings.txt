@@ -1,0 +1,22 @@
+1. To pass a paramater on a onclick event,
+we need to use an anonymous function.
+
+Basically, we need to return a function
+
+eg; onClick = (() => {handleclick('henlo')})
+
+2. Trick for displaying singular or plural length of items
+
+<p>{ (length==1) ? `You have ${length} item in your list` : `You have ${length} items in your list`}</p>
+
+3. To make an input a conrolled component,
+you can set value and use OnChange -> setItem for an input
+
+4. To prevent reloading of dom on pressing enter,
+you can use e.preventDefault()
+
+5. To show error messages coming from json apis,
+ better to use state for error messages
+ This state can be set in a try - catch block inside the useEffect
+ on awaiting the res
+ -ponse from the json api.
